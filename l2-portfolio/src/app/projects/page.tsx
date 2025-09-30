@@ -1,4 +1,4 @@
-import ProjectCard from "@/components/ProjectCard";
+import Card from "@/components/Project/Card";
 import { myProjects as projectsData } from './data';
 import { Project } from "./types";
 
@@ -7,7 +7,7 @@ export default function Projects() {
         <div className="p-8">
             <div className="grid grid-cols-3 gap-4">
                 {projectsData.map((project: Project) => (
-                    <ProjectCard
+                    <Card
                         key={project.id}
                         slug={project.slug}
                         title={project.title}

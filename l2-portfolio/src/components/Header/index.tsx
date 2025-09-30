@@ -11,7 +11,7 @@ export default function Header() {
             : 'block py-2 px-3 text-[#242329] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent';
 
     return (
-        <nav className="text-[#242329]">
+        <nav className="fixed pt-4 pb-4 top-0 left-0 w-full bg-white z-50 text-[#242329]">
             <div className="max-w-screen-lg flex items-center justify-between mx-auto">
                 <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
                     <span className="self-center font-semibold whitespace-nowrap">L2</span>
