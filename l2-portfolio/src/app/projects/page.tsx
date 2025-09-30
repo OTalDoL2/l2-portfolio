@@ -1,12 +1,19 @@
 import ProjectCard from "@/components/ProjectCard";
-import {myProjects} from './data.js';
+import { myProjects as projectsData } from './data';
+import { Project } from "./types";
 
 export default function Projects() {
     return (
-        <div className="">
-            <div className="grid grid-cols-3 gap-4 bg-indigo-500">
-                {myProjects.map(project => (
-                    <ProjectCard key={project.id} name={project.name} description={project.description} logo={project.logo} />
+        <div className="p-8">
+            <div className="grid grid-cols-3 gap-4">
+                {projectsData.map((project: Project) => (
+                    <ProjectCard
+                        key={project.id}
+                        slug={project.slug}
+                        title={project.title}
+                        description={project.short_description}
+                        logo={project.logo}
+                    />
                 ))}
             </div>
         </div>
