@@ -28,11 +28,7 @@ export default function Main({ project }: Props) {
             <ul>
                 {project.link.map((link) => (
                     <li key={link.type} className="flex items-center gap-2">
-                        <a
-                            href={link.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <a href={link.url}>
                         <FontAwesomeIcon style={{ color: project.theme[3] }} icon={getIcon(link.type) || faHome} className="text-2xl" />
                         </a>
                     </li>

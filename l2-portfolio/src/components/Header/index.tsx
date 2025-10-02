@@ -23,7 +23,7 @@ export default function Header() {
                             <a href="/" className={linkClasses('/')}>Home</a>
                         </li>
                         <li>
-                            <a href="/sobre-mim" className={linkClasses('/sobre-mim')}>Sobre Mim</a>
+                            <a href="/about-me" className={linkClasses('/sobre-mim')}>Sobre Mim</a>
                         </li>
                         <li>
                             <a href="/projects" className={linkClasses('/projects')}>Projetos</a>

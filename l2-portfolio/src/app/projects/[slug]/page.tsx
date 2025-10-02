@@ -31,7 +31,7 @@ export default function ProjectPage() {
 
 
   return (
-    <div className="mt-10 flex p-8 h-140 w100 align-center justify-center">
+    <div className="flex p-8 h-140 w100 align-center justify-center">
       <div className="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col gap-2">
         {tabs.slice(0, Math.ceil(tabs.length)).map((tab) => (
           <button

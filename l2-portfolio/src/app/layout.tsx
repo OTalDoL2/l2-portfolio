@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en" className={poppins.className}>
       <body className="bg-[#181915] text-white p-4">
         <Header />
-        <div className="mt-4">
+        <div className="mt-10">
           {children}
         </div>
       </body>
