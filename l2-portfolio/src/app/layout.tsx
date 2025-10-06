@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import '@/utils/fontawesome'; // ou de onde você salvou
+import '@/utils/fontawesome'; 
 import "./globals.css";
 
 import { Poppins } from 'next/font/google'
@@ -17,9 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={poppins.className}>
-      <body className="bg-[#181915] text-white p-4">
+      <body className="bg-[#181915] text-white p-4 lg:p-0">
         <Header />
-        <div className="mt-10">
+        <div className="mt-8">
           {children}
         </div>
       </body>

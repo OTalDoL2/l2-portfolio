@@ -5,54 +5,55 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faMediumM, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 interface Props {
-    project: Project
+  project: Project
 }
 
-
 export default function Main({ project }: Props) {
-    function getIcon(iconName: string){
-        switch(iconName){
-            case "Github":
-                return faGithub
-            case "Youtube":
-                return faYoutube
-            case "Instagram":
-                return faInstagram
-            case "Medium":
-                return faMediumM
-        }
+
+  function getIcon(iconName: string) {
+    switch (iconName) {
+      case "Github":
+        return faGithub
+      case "Youtube":
+        return faYoutube
+      case "Instagram":
+        return faInstagram
+      case "Medium":
+        return faMediumM
+      default:
+        return faHome
     }
+  }
 
-    return (<div className="flex items-center space-x-8">
-        <div className="social-project-links">
-            <ul>
-                {project.link.map((link) => (
-                    <li key={link.type} className="flex items-center gap-2">
-                        <a href={link.url}>
-                        <FontAwesomeIcon style={{ color: project.theme[3] }} icon={getIcon(link.type) || faHome} className="text-2xl" />
-                        </a>
-                    </li>
-                ))}
-            </ul>
+  return (
+    <div className="flex flex-col-reverse md:flex-row items-center justify-center lg:justify-between gap-6 p-4lg:space-x-8lg:w-250">
+      <div className="flex flex-col md:flex-row md:items-center md:space-x-8 w-full md:w-auto">
+        <div className="flex md:flex-col justify-center items-center gap-4 md:gap-2 mt-4 md:mt-0">
+          {project.link.map((link) => (
+            <a key={link.type} href={link.url} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon
+                style={{ color: project.theme[3] }}
+                icon={getIcon(link.type)}
+                className="text-2xl hover:scale-110 transition-transform"
+              />
+            </a>
+          ))}
         </div>
 
-        <div className="pl-10 w-100 space-y-2">
-
-            <h1 className='text-5xl w-100 font-bold'>{project.title}</h1>
-            <h2 className="text-lg text-[#7c756a]"> {project.subtitle[0]} </h2>
-            <p className="mt-4 text-[#ada79f]">
-                {project.subtitle[1]}
-            </p>
-
+        <div className="md:pl-10 flex-1 text-center md:text-left space-y-2">
+          <h1 className="text-4xl md:text-5xl font-bold">{project.title}</h1>
+          <h2 className="text-lg text-[#7c756a]">{project.subtitle[0]}</h2>
+          <p className="mt-4 text-[#ada79f]">{project.subtitle[1]}</p>
         </div>
+      </div>
 
-        <img
-            src={project.logo}
-            alt="Logo Rastros 2028"
-            width={350}
-            height={350}
-            className="object-contain rounded-full"
-        />
-    </div>)
-
+      <img
+        src={project.logo}
+        alt={project.title}
+        width={300}
+        height={300}
+        className="object-contain rounded-full mb-4 md:mb-0"
+      />
+    </div>
+  )
 }

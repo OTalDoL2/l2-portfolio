@@ -27,7 +27,7 @@ export default function Card({ technology }: Props) {
     }
 
     return (
-        <div className="justify-items-center w-50">
+        <div className="flex flex-col items-center text-center">
             <img src={getTechnologyIcon(technology)} alt={technology} width={100} height={100} />
             <h3>{technology}</h3>
         </div>
