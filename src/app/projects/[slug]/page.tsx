@@ -7,11 +7,16 @@ import Main from '@/components/Project/Main';
 import Board from '@/components/Tech/Board';
 import About from '@/components/Project/About';
 
+export async function generateStaticParams() {
+  return myProjects.map((project) => ({
+    slug: project.slug,
+  }));
+}
+
 export default function ProjectPage() {
   const params = useParams();
   const slug = params.slug;
   const project = myProjects.find((p) => p.slug === slug);
-
   if (!project) {
     return <div>Projeto não encontrado</div>;
   }
