@@ -26,7 +26,7 @@ export default function Main({ project }: Props) {
   }
 
   return (
-    <div className="flex flex-col-reverse md:flex-row items-center justify-center lg:justify-between gap-6 p-4lg:space-x-8lg:w-250">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-center lg:justify-between gap-6 p-4 lg:space-x-8 lg:w-250">
       <div className="flex flex-col md:flex-row md:items-center md:space-x-8 w-full md:w-auto">
         <div className="flex md:flex-col justify-center items-center gap-4 md:gap-2 mt-4 md:mt-0">
           {project.link.map((link) => (
