@@ -1,6 +1,11 @@
 import { myProjects } from '../data';
 import SelectedProjectPage from './SelectedProjectPage';
 
+interface ProjectPageProps {
+  params: {
+    slug: string;
+  };
+}
 
 export async function generateStaticParams() {
   return myProjects.map((project) => ({
@@ -8,10 +13,9 @@ export async function generateStaticParams() {
   }));
 }
 
-type Params = { slug: string };
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = params;
 
-export default function ProjectPage({ params }: {params: Params}) {
-  const { slug } = params; 
   const project = myProjects.find((p) => p.slug === slug);
 
   if (!project) {
