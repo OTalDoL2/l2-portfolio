@@ -14,7 +14,7 @@ type Props = {
   params: paramsType;
 };
 
-export default async function ProjectPage({ params }: Props) {
+export default function ProjectPage({ params }: Props) {
   const { slug } = params; // sem await
   const project = myProjects.find((p) => p.slug === slug);
 
