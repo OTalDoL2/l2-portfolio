@@ -1,25 +1,24 @@
 import { myProjects } from '../data';
 import SelectedProjectPage from './SelectedProjectPage';
+import { notFound } from 'next/navigation';
 
 interface ProjectPageProps {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
   return myProjects.map((project) => ({
-    slug: project.slug,
+    slug: project.slug
   }));
 }
 
 export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const project = myProjects.find((p) => p.slug === slug);
 
   if (!project) {
-    return <div>Projeto não encontrado</div>;
+    notFound();
   }
 
   return <SelectedProjectPage project={project} />;
