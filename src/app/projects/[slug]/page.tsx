@@ -2,20 +2,9 @@ import { myProjects } from '../data';
 import SelectedProjectPage from './SelectedProjectPage';
 import { notFound } from 'next/navigation';
 
-export async function generateStaticParams() {
-  return myProjects.map((project) => ({
-    slug: project.slug
-  }));
-}
-
-export type paramsType = { slug: string };
-
-type Props = {
-  params: paramsType;
-};
-
-export default function ProjectPage({ params }: any) {
-  const { slug } = params; // sem await
+export default async function ProjectPage({ params }: {params: Promise<{slug: string}>}) {
+  const slug = (await params).slug; 
+  console.log(slug + " aparece normal....")
   const project = myProjects.find((p) => p.slug === slug);
 
   if (!project) {

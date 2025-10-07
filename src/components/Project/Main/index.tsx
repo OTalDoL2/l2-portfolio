@@ -1,4 +1,3 @@
-'use client'
 import { Project } from "@/app/projects/types"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
