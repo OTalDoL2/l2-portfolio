@@ -12,8 +12,8 @@ type ProjectPageProps = {
   params: Promise<{ slug: string }>;
 };
 
-export default function ProjectPage({ params }: any) {
-  const { slug } = params;
+export default async function ProjectPage({ params }: any) {
+  const { slug } = await params;
   const project = myProjects.find((p) => p.slug === slug);
 
   if (!project) {
