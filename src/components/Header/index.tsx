@@ -36,7 +36,6 @@ export default function Header() {
                         <li> <a href="/" className={linkClasses('/')}>Home</a> </li>
                         <li> <a href="/about-me" className={linkClasses('/about-me')}>Sobre Mim</a> </li>
                         <li> <a href="/projects" className={linkClasses('/projects')}>Projetos</a> </li>
-                        <li> <a href="/contato" className={linkClasses('/contato')}>Contato</a> </li>
                     </ul>
                 </div>
             </div>
