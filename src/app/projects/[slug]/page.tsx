@@ -8,8 +8,13 @@ export async function generateStaticParams() {
   }));
 }
 
+export type paramsType = Promise<{ slug: string }>;
 
-export default async function ProjectPage({ params }: any) {
+type Props = {
+  params: paramsType;
+};
+
+export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;
   const project = myProjects.find((p) => p.slug === slug);
 
