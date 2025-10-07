@@ -8,9 +8,6 @@ export async function generateStaticParams() {
   }));
 }
 
-type ProjectPageProps = {
-  params: Promise<{ slug: string }>;
-};
 
 export default async function ProjectPage({ params }: any) {
   const { slug } = await params;
