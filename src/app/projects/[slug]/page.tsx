@@ -14,7 +14,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function ProjectPage({ params }: { params: Promise<any> }) {
   const {slug} = await params;
   const project = myProjects.find((p) => p.slug === slug);
 
