@@ -1,0 +1,18 @@
+{
+    "Home": {
+        "title": "Hi, i'm Lucas",
+        "subtitle": [
+            "Data Analyst and",
+            "Fullstack Developer"
+        ]
+    },
+    "About": {
+        "p": [
+            "Sempre gostei muito de tecnologia e jogos, mas só descobri o mundo da programação quando entrei na <important>ETE Cícero Dias</important>, onde cursei o Ensino Médio integrado com o curso técnico de Programação de Jogos. ",
+            "Quando terminei o ensino médio, ingressei na <important>FICR - Faculdade Católica Imaculada da Conceição do Recife</important>, através do programa Embarque Digital. Lá cursei <important>Análise e Desenvolvimento de Sistemas</important>. Tive a oportunidade de desenvolver projetos para algumas empresas e até receber menção no <newsLink>jornal local</newsLink>, por conta de um deles. ",
+            "Em paralelo a isso, comecei a trabalhar na <important>Vega Monitoramento</important>. Além de atuar com <important>Engenharia de Dados</important>, também desenvolvi ferramentas para automatizar tarefas e auxiliar no geoprocessamento. ",
+            "Para mim, programar é uma forma de arte. É utilizar criatividade e imaginação para solucionar problemas e ajudar pessoas.",
+            "<important>Extra:</important> Eu adoro resolver cubos mágicos (inclusive, tenho uma pequena coleção 😄) e um bom café!"
+        ]
+    }
+}

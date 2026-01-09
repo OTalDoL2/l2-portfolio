@@ -4,7 +4,7 @@ import { useState } from "react";
 import Main from '@/components/Project/Main';
 import Board from '@/components/Tech/Board';
 import About from '@/components/Project/About';
-import { Project } from "@/app/projects/types";
+import { Project } from "@/app/[locale]/projects/types";
 
 interface Props {
   project: Project;
