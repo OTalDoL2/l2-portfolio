@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 export default function Home() {
   const translation = useTranslations("Home");
   return (
-    <div className="w-full py-10 lg:py-16 flex flex-col items-center justify-center">
+    <div className="w-full py-10 lg:py-65 flex flex-col items-center justify-center">
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16 max-w-5xl px-6">
         <div className="flex flex-col items-center text-center">
           <img
@@ -28,8 +28,7 @@ export default function Home() {
         </div>
 
         <div className="text-center md:text-left text-gray-900">
-
-          <h1 className="text-3xl md:text-5xl font-bold mb-2"> {translation("title")} </h1>
+          <h1 className="text-3xl md:text-5xl lg:w-120 font-bold mb-2"> {translation("title")} </h1>
           {(translation.raw("subtitle") as string[]).map((line, i) => (
             <h2 className="text-xl md:text-3xl" key={i}> {line} </h2>
           ))}
