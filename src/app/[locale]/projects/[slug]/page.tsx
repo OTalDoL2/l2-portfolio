@@ -9,8 +9,11 @@ interface ProjectPageProps {
 }
 
 
+const locales = ['pt', 'en'];
+
 export async function generateStaticParams() {
   return myProjects.map((project) => ({
+    locales,
     slug: project.slug
   }));
 }
@@ -19,7 +22,7 @@ export default async function ProjectPage({ params }: any) {
   const { slug } = await params;
 
   const project = myProjects.find((p) => p.slug === slug);
-
+  
   if (!project) {
     notFound();
   }
