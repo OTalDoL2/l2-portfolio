@@ -9,7 +9,7 @@ interface Props {
 }
 export default function Card({ title, description, logo, slug }: Props) {
     const translation = useTranslations("Projects");
-
+    
     return (
         <div className="bg-gray-100 text-[#242329] p-4 border-2 border-[#181915] rounded-lg max-w-sm mx-auto">
             <img
@@ -29,9 +29,9 @@ export default function Card({ title, description, logo, slug }: Props) {
             </p>
 
             <div className="flex justify-end items-end">
-                <Link className="border-2 text-sm  bg-transparent hover:bg-[#181915] hover:text-white transition-colors duration-300 mt-2 p-2 rounded-lg" href={{ pathname: "/projects/[slug]", params: { slug } }}>
+                <Link className="border-2 text-sm  bg-transparent hover:bg-[#181915] hover:text-white transition-colors duration-300 mt-2 p-2 rounded-lg"  href={`/projects/${slug}`}>
                     <h2 className="text-md font-semibold ">
-                        Ver Projeto
+                    Ver Projeto
                     </h2>
                 </Link>
             </div>

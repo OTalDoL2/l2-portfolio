@@ -3,17 +3,13 @@ import SelectedProjectPage from './SelectedProjectPage';
 import { notFound } from 'next/navigation';
 
 interface ProjectPageProps {
-  params: Promise<{ slug: string }>;
+  params: {
+    slug: string;
+  };
 }
 
-export async function generateStaticParams() {
-  return myProjects.map((project) => ({
-    slug: project.slug
-  }));
-}
-
-export default async function ProjectPage({ params }: ProjectPageProps) {
-  const { slug } = await params;
+export default function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = params;
 
   const project = myProjects.find((p) => p.slug === slug);
 
