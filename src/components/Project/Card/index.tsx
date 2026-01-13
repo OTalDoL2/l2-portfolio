@@ -1,4 +1,5 @@
-import Link from 'next/link';
+import { Link } from "@/i18n/navigation"
+import { useTranslations } from "next-intl";
 
 interface Props {
     title: string,
@@ -7,6 +8,7 @@ interface Props {
     logo: string,
 }
 export default function Card({ title, description, logo, slug }: Props) {
+    const translation = useTranslations("Projects");
     return (
         <div className="bg-gray-100 text-[#242329] p-4 border-2 border-[#181915] rounded-lg max-w-sm mx-auto">
             <img
@@ -18,11 +20,11 @@ export default function Card({ title, description, logo, slug }: Props) {
             />
 
             <div className="flex justify-between items-center mb-2">
-                <h2 className="text-xl font-semibold"> {title} </h2>
+                <h2 className="text-xl font-semibold"> {translation(`${slug}.title`)} </h2>
             </div>
 
             <p className="text-sm text-gray-500 line-clamp-3 mb-4">
-                {description}
+                {translation(`${slug}.short_description`)}
             </p>
 
             <div className="flex justify-end items-end">

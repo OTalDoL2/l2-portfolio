@@ -1,49 +1,7 @@
-
 import { useTranslations } from "next-intl";
 
 export default function AboutMe() {
     const translation = useTranslations("About");
-    // const paragraphs = [
-    //     {
-    //         key: "p1",
-    //         values: {
-    //             school: (chunks: React.ReactNode) => <strong>{chunks}</strong>
-    //         }
-    //     },
-    //     {
-    //         key: "p2",
-    //         values: {
-    //             college: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
-    //             degree: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
-    //             newsLink: (chunks: React.ReactNode) => (
-    //                 <a
-    //                     href="https://www.folhape.com.br/noticias/conheca-o-equipamento-desenvolvido-por-pernambucanos-para-aumentar/249444/"
-    //                     target="_blank"
-    //                     rel="noopener noreferrer"
-    //                     className="text-blue-600 underline hover:text-blue-800 transition"
-    //                 >
-    //                     {chunks}
-    //                 </a>
-    //             )
-    //         }
-    //     },
-    //     {
-    //         key: "p3",
-    //         values: {
-    //             company: (chunks: React.ReactNode) => <strong>{chunks}</strong>,
-    //             area: (chunks: React.ReactNode) => <strong>{chunks}</strong>
-    //         }
-    //     },
-    //     {
-    //         key: "p4"
-    //     },
-    //     {
-    //         key: "p5",
-    //         values: {
-    //             extraLabel: (chunks: React.ReactNode) => <strong>{chunks}</strong>
-    //         }
-    //     }
-    // ];
     const lines = translation.raw("p") as string[];
 
     return (

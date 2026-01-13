@@ -3,13 +3,14 @@ import { Project } from "@/app/[locale]/projects/types"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faInstagram, faMediumM, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { useTranslations } from "next-intl";
 
 interface Props {
   project: Project
 }
 
 export default function Main({ project }: Props) {
-
+  const translation = useTranslations("Projects");
   function getIcon(iconName: string) {
     switch (iconName) {
       case "Github":
@@ -41,9 +42,9 @@ export default function Main({ project }: Props) {
         </div>
 
         <div className="md:pl-10 flex-1 text-center md:text-left space-y-2">
-          <h1 className="text-4xl md:text-5xl font-bold">{project.title}</h1>
-          <h2 className="text-lg text-[#7c756a]">{project.subtitle[0]}</h2>
-          <p className="mt-4 text-[#ada79f]">{project.subtitle[1]}</p>
+          <h1 className="text-4xl md:text-5xl font-bold">{translation(`${project.slug}.title`)}</h1>
+          <h2 className="text-lg text-[#7c756a]">{translation.rich(`${project.slug}.subtitle.0`)}</h2>
+          <p className="mt-4 text-[#ada79f]">{translation.rich(`${project.slug}.subtitle.1`)}</p>
         </div>
       </div>
 

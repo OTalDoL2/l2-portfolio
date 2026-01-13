@@ -36,7 +36,7 @@ export const myProjects: Project[] = [
         theme: ["bg-neutral-300", "bg-neutral-300", "bg-neutral-300", "#c9c9c9"]
     }, {
         id: 3,
-        slug: "resgistro_inteligente",
+        slug: "registro_inteligente",
         title: "Registro Inteligente",
         subtitle: ["Uma lista de tarefas é útil, mas as vezes é necessário um pouco mais.", "Desenvolvido para ajudar meu pai, tornando seu trabalho mais prático."],
         short_description: "Aplicação Mobile de registro de entregas e geração de um relatório para prestação de contas.",
