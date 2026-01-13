@@ -1,10 +1,12 @@
-import { Project } from "@/app/projects/types";
+import { Project } from "@/app/[locale]/projects/types";
+import { useTranslations } from "next-intl";
 
 interface Props {
     project: Project;
 }
 
 export default function About({ project }: Props) {
+    const translation = useTranslations("Projects");
     return (
         <div>
             <h1 className="text-3xl md:text-4xl text-center font-bold mb-6">
@@ -15,11 +17,11 @@ export default function About({ project }: Props) {
                 <img
                     className="rounded-2xl max-w-xs md:max-w-sm"
                     src={project.logo}
-                    alt={project.title}
+                    alt={translation(`${project.slug}.title`)}
                 />
 
                 <h2 className="text-base md:text-lg text-justify max-w-lg p-2 md:p-8">
-                    {project.description}
+                    {translation(`${project.slug}.description`)}
                 </h2>
             </div>
 
@@ -27,16 +29,15 @@ export default function About({ project }: Props) {
                 link.type === "Medium" ? (
                     <div className="mt-8 text-center md:text-left" key={index}>
                         <p>
-                            Se tiver curiosidade sobre o processo de criação, dá uma
-                            olhada no meu{" "}
+                            {translation.rich(`link.medium.0`)}{" "}
                             <a
                                 href={link.url}
                                 className="underline"
                                 style={{ color: project.theme[3] }}
-                            >
+                                >
                                 Medium
                             </a>
-                            . Aposto que vai gostar.
+                            . {translation.rich(`link.medium.1`)}
                         </p>
                     </div>
                 ) : null

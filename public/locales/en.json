@@ -1,0 +1,89 @@
+{
+    "Header": [
+        "About Me",
+        "Projects"
+    ],
+    "Home": {
+        "title": "Hey, i'm Lucas",
+        "subtitle": [
+            "Data Analyst and",
+            "Fullstack Developer"
+        ]
+    },
+    "About": {
+        "p": [
+            "I've always really liked technologies and games, but only discovered the world of programming when i studied at <important>Escola Técnica Estadual Cícero Dias</important> (State Technical School), that's a high school integrated with a Game Development course.",
+            "When i finishied the high school, i joined on <important>FICR - Faculdade Católica Imaculada da Conceição do Recife</important>, through the state program Embarque Digital. At the university, i coursed <important>Systems Analysis and Development</important>. I had a opportunity to develop projects to several companies and recieve in the <newsLink>local newspaper</newsLink>.",
+            "In parallel, i'm working at <important>Vega Monitoramento</important>. I working at Data Engineering, creating tools to automatizate tasks and geoprocessing.",
+            "I think programming is a kind of art. It is use our creativity and imagination to solve problems and help others.",
+            "<important>Extra:</important> I love solve puzzles, rubik cube's (i've a small collection 😄) and a good coffee!"
+        ]
+    },
+    "Projects": {
+        "rastros": {
+            "title": "Rastros 2028",
+            "subtitle": [
+                "Anima Recife Edition",
+                "Final project for the subjects DGC (Digital Games Culture) and IP (Integrated Project). Presented as an Indie Game on Anima Recife 2020."
+            ],
+            "short_description": "In not too distant future, a company manages to reverse the landscape of drug trafficking, smuggling and homicides. Over time, this company was able to fight crime in many countries. But, the droids began to gain power and even started to influence the political world... ",
+            "description": "In not too distant future a company called Misterbot manages to reverse the landscape of drug trafficking, smuggling and homicides. But, the droids began to gain power and even started to influence the political world. But the only place Misterbot couldn't control was Brazil. In the game, you are the Resistence or the Droids."
+        },
+        "quarentenado": {
+            "title": "Quarantined",
+            "subtitle": [
+                "An Quarantine's Simulator.",
+                "Developed at the beggining of the pandemic of Corona Virus, during the CoronaJam, a GameJam promoved by the developer and youtuber Amdré Young. We were among the top 50."
+            ],
+            "short_description": "In Quarantined, you plays as André, a boy during a pandemic. While his mother is forced to keep working, André must take responsibility for the household, managing daily tasks and challenges on his own.",
+            "description": "In Quarantined, you plays as André, a boy during a pandemic. While his mother is forced to keep working, André must take responsibility for the household, managing daily tasks and challenges on his own.\nThe game was developed at the beggining of the pandemic of Corona Virus, during the CoronaJam, a GameJam promoved by the developer and youtuber Amdré Young. We were among the top 50."
+        },
+        "integrarte": {
+            "title": "INTEGRARTE",
+            "subtitle": [
+                "Digitize manual activities.",
+                "A project developed to bring practicality and progress to the Non-Governmental Organization INTEGRARTE - Center for Integration, Citizenship and Art."
+            ],
+            "short_description": "The software developed to improve control over income and expenses. This was a volunteer project focused on digitizing and optimizing administrative processes, bringing greater efficiency and organization to daily operations.",
+            "description": "The software developed to improve control over income and expenses. This was a volunteer project. The NGO used to use a lot paper, and when it rained, sometimes part of record was lost. The real challenge was developing to old users, with computational limited notion or without computational knowledge."
+        },
+        "registro_inteligente": {
+            "title": "Smart Record",
+            "subtitle": [
+                "A ToDoList is useful, but sometimes you need more.",
+                "Developed to help my dad, making his work more practical."
+            ],
+            "short_description": "Mobile App for recording deliveries and generate a report for accountability purposes.",
+            "description": "The mobile app \"Registro Inteligente\" was developed exclusively for my dad. After observing his workflow and talking to him, I realized that he manually recorded the routes he worked (cities), the daily rate, and the date. Every 15 days, he would fill out a spreadsheet, scan it, and send it to the service-providing company. To improve this process, I developed a mobile application that allows these records to be stored directly on the phone. At the end of the month, with a single click, the app generates a spreadsheet in the same structure he previously used.\nThe project was initially built using React Native and Expo, and later rewritten in TypeScript."
+        },
+        "propig": {
+            "title": "POS Device Tracking - Propig",
+            "subtitle": [
+                "Request and Track your POS Device.",
+                "A project developed for company Propig."
+            ],
+            "short_description": "The project consists an update to the POS Device Tracking page for a solutions provider company.",
+            "description": "The project consists an update to the POS Device Tracking page for a solutions provider company."
+        },
+        "recentro": {
+            "title": "Property Registry - Recentro",
+            "subtitle": [
+                "Keeping an eye on available properties in downtown Recife neighborhoods.",
+                "A project developed for the municipal company Recentro."
+            ],
+            "short_description": "A dashboard platform created to monitor rental properties in the neighborhoods of Santo Amaro, Boa Vista, and Downtown Recife.",
+            "description": "A dashboard platform created to monitor rental properties in the neighborhoods of Santo Amaro, Boa Vista, and Downtown Recife. The platform was developed to solve challenges faced by the company Recentro — Revitalization of Downtown Recife. Python was used for data cleaning, and Java was used to build a well-structured backend."
+        },
+        "link": {
+            "medium": [
+                "If you're curious about the process, look at my",
+                "I'll bet you like."
+            ]
+        },
+        "menu": [
+            "Main",
+            "About Project",
+            "Stack and Techs"
+        ]
+    }
+}

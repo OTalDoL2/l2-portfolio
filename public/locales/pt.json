@@ -1,0 +1,89 @@
+{
+    "Header": [
+        "Sobre Mim",
+        "Projetos"
+    ],
+    "Home": {
+        "title": "Olá, eu sou o Lucas",
+        "subtitle": [
+            "Analista de Dados e",
+            "Desenvolvedor Fullstack"
+        ]
+    },
+    "About": {
+        "p": [
+            "Sempre gostei muito de tecnologia e jogos, mas só descobri o mundo da programação quando entrei na <important>ETE Cícero Dias</important>, onde cursei o Ensino Médio integrado com o curso técnico de Programação de Jogos.",
+            "Quando terminei o ensino médio, ingressei na <important>FICR - Faculdade Católica Imaculada da Conceição do Recife</important>, através do programa Embarque Digital. Lá cursei <important>Análise e Desenvolvimento de Sistemas</important>. Tive a oportunidade de desenvolver projetos para algumas empresas e até receber menção no <newsLink>jornal local</newsLink>, por conta de um deles.",
+            "Em paralelo a isso, comecei a trabalhar na <important>Vega Monitoramento</important>. Além de atuar com <important>Engenharia de Dados</important>, também desenvolvi ferramentas para automatizar tarefas e auxiliar no geoprocessamento.",
+            "Para mim, programar é uma forma de arte. É utilizar criatividade e imaginação para solucionar problemas e ajudar pessoas.",
+            "<important>Extra:</important> Eu adoro resolver cubos mágicos (inclusive, tenho uma pequena coleção 😄) e um bom café!"
+        ]
+    },
+    "Projects": {
+        "rastros": {
+            "title": "Rastros 2028",
+            "subtitle": [
+                "Edição Especial Anima Recife",
+                "Desenvolvido como projeto final, referente às disciplinas de CJD (Cultura de Jogos de Digitais) e PI (Projeto Integrado). Apresentado como jogo Indie no Anima Recife 2020."
+            ],
+            "short_description": "Num futuro não muito distante, uma empresa conseguiu reverter o cenário de tráfico, contrabando e homicídios. Cada vez mais, essa empresa conseguiu combater o crime dos países. Mas, com o passar do tempo, os Androids começaram a dominar até o mundo político... ",
+            "description": "Num futuro não muito distante, uma empresa chamada Misterbot conseguiu reverter o cenário de tráfico, contrabando e homicídios. Mas, com o passar do tempo, os Androids começaram a dominar até o mundo político. Mas o único lugar em que a Misterbot não conseguiu dominar foi o Brasil. No jogo você vai estar na pele da resistência, contra os robôs, ou os próprios robôs."
+        },
+        "quarentenado": {
+            "title": "Quarentenado",
+            "subtitle": [
+                "Um Simulador de Quarentena",
+                "Desenvolvido no início da Pandemia, durante a CoronaJam, uma GameJam promovida pelo desenvolvedor e youtuber Amdré Young. Ficamos dentro do top 50."
+            ],
+            "short_description": "Em Quarentenado, você assume o papel de André, um garoto que diante de uma situação de pandemia, é obrigado a cuidar dos afazeres da casa enquanto sua mãe está no trabalho, já que ela não foi liberada.",
+            "description": "Em Quarentenado, você assume o papel de André, um garoto que diante de uma situação de pandemia, é obrigado a cuidar dos afazeres da casa enquanto sua mãe está no trabalho, já que ela não foi liberada.\nO jogo foi desenvolvido no início da Pandemia do Corona Víruis, durante a CoronaJam, uma GameJam realizada pelo André Young. Não fomos os ganhadores, mas ficamos entre os 50 melhores."
+        },
+        "integrarte": {
+            "title": "INTEGRARTE",
+            "subtitle": [
+                "Digitalizando atividades manuais",
+                "Um projeto desenvolvido para trazer praticidade e evolução para a ONG INTEGRARTE - (Centro Pró-Integração, Cidadania e Arte)"
+            ],
+            "short_description": "Programa desenvolvido para ter melhor controle de receita e gastos pela ONG INTEGRARTE. Foi um trabalho voluntário prestado, tendo como objetivo digitalizar atividades realizadas pela administração da mesma.",
+            "description": "Programa desenvolvido para ter melhor controle de receita e gastos pela ONG. Foi um trabalho voluntário prestado para uma ONG, que utilizava muito papel e, por conta de razões maiores, perdeu alguns de seus registros. Um dos desafios, foi desenvolver um programa simples e leve, que guarde os registros localmente e que seria utilizado por pessoas com noção limitada de computação. Além de não ter custos futuros e manutenção."
+        },
+        "registro_inteligente": {
+            "title": "Registro Inteligente",
+            "subtitle": [
+                "Uma lista de tarefas é útil, mas as vezes é necessário um pouco mais.",
+                "Desenvolvido para ajudar meu pai, tornando seu trabalho mais prático."
+            ],
+            "short_description": "Aplicação Mobile de registro de entregas e geração de um relatório para prestação de contas.",
+            "description": "A aplicação mobile \"Registro Inteligente\" foi desenvolvida exclusivamente para o uso do meu pai. Após uma observação minha e uma conversa, cheguei a conclusão que ele anotava a rota que trabalhou (as cidades), o valor da diária e a data do dia. A cada 15 dias ele sentava e preenchia uma tabela, escaneava e enviava para a empresa quem presta o serviço. Então, fiz a aplicação que permite ele fazer tais registros e armazenar na memória do próprio telefone, e no final do mês, clica no botão e gera a planilha (já na estrutura que ele costumava fazer).\nO projeto foi feito com React Native e Expo, e posteriormente refiz usando Typescript."
+        },
+        "propig": {
+            "title": "Rastreamento de Maquinetas - Propig",
+            "subtitle": [
+                "Para pedir e acompanhar suas maquinetas",
+                "Um projeto desenvolvido para a empresa Propig, durante a disciplina de Residência Tecnológica."
+            ],
+            "short_description": "O projeto consiste em uma atualização da página de rastreamento de maquinetas para uma empresa provedora de soluções que conecta a tecnologia a favor dos clientes.",
+            "description": "O projeto consiste em uma atualização da página de rastreamento de maquinetas para uma empresa provedora de soluções que conecta a tecnologia a favor dos clientes."
+        },
+        "recentro": {
+            "title": "Registro de Imóveis - Recentro",
+            "subtitle": [
+                "De olho em imóveis disponíveis nos bairros do centro de Recife.",
+                "Um projeto desenvolvido para empresa municipal Recentro."
+            ],
+            "short_description": "Plataforma dashboard criada para acompanhamento de Imóveis para locação nos bairros: Santo Amaro, Boa Vista e Centro do Recife.",
+            "description": "Plataforma dashboard criada para acompanhamento de Imóveis para locação nos bairros: Santo Amaro, Boa Vista e Centro do Recife. A plataforma foi desenvolvida para solucionar dificuldades enferentadas pela empresa Recentro - Revitalização do centro do Recife. Foi necessário também a utilização de python, para limpeza de dados e Java, para construção de um backend bem estruturado."
+        },
+        "link": {
+            "medium": {
+                "p1": "Se tiver curiosidade sobre o processo de criação, dá uma olhada no meu",
+                "p2": "Aposto que vai gostar."
+            }
+        },
+        "menu": [
+            "Visão Geral",
+            "Sobre o Projeto",
+            "Tecnologias"
+        ]
+    }
+}
