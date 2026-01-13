@@ -8,6 +8,13 @@ interface ProjectPageProps {
   };
 }
 
+
+export async function generateStaticParams() {
+  return myProjects.map((project) => ({
+    slug: project.slug
+  }));
+}
+
 export default function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = params;
 
