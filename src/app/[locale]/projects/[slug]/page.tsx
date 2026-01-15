@@ -2,21 +2,9 @@ import { myProjects } from '../data';
 import SelectedProjectPage from './SelectedProjectPage';
 import { notFound } from 'next/navigation';
 
-interface ProjectPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-
 const locales = ['pt', 'en'];
 
-export async function generateStaticParams() {
-  return myProjects.map((project) => ({
-    locales,
-    slug: project.slug
-  }));
-}
+export const dynamic = 'force-dynamic';
 
 export default async function ProjectPage({ params }: any) {
   const { slug } = await params;

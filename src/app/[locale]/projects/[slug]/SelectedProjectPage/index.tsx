@@ -14,9 +14,9 @@ interface Props {
 export default function SelectedProjectPage({ project }: Props) {
   const translation = useTranslations("Projects");
   const tabs = [
-    { id: 1, label: translation.rich('menu.0'), color: project.theme[0] },
-    { id: 2, label: translation.rich('menu.1'), color: project.theme[1] },
-    { id: 3, label: translation.rich('menu.2'), color: project.theme[2] },
+    { id: 1, label: translation('menu.0'), color: project.theme[0] },
+    { id: 2, label: translation('menu.1'), color: project.theme[1] },
+    { id: 3, label: translation('menu.2'), color: project.theme[2] },
   ];
 
   const [active, setActive] = useState(1);
