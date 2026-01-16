@@ -20,6 +20,7 @@
         ]
     },
     "Projects": {
+        "card": "View Project",
         "rastros": {
             "title": "Rastros 2028",
             "subtitle": [
