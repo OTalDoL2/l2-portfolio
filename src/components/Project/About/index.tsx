@@ -10,7 +10,7 @@ export default function About({ project }: Props) {
     return (
         <div>
             <h1 className="text-3xl md:text-4xl text-center font-bold mb-6">
-                {project.title}
+                {translation(`${project.slug}.title`)}
             </h1>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">

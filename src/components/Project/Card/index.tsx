@@ -31,7 +31,7 @@ export default function Card({ title, description, logo, slug }: Props) {
             <div className="flex justify-end items-end">
                 <Link className="border-2 text-sm  bg-transparent hover:bg-[#181915] hover:text-white transition-colors duration-300 mt-2 p-2 rounded-lg"  href={`/projects/${slug}`}>
                     <h2 className="text-md font-semibold ">
-                    Ver Projeto
+                    {translation(`card`)}
                     </h2>
                 </Link>
             </div>
